@@ -4,6 +4,7 @@ import 'package:lottie/lottie.dart';
 import 'package:mood_tracker/repo/authentification_repository.dart';
 import 'package:mood_tracker/view_model/fetch_mood_view_model.dart';
 
+//
 class SearchScreen extends ConsumerStatefulWidget {
   const SearchScreen({super.key});
 
