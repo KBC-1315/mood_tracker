@@ -46,14 +46,16 @@ class DefaultFirebaseOptions {
     messagingSenderId: '637497346681',
     projectId: 'mood-tracker-tobe13155131',
     authDomain: 'mood-tracker-tobe13155131.firebaseapp.com',
+    databaseURL: 'https://mood-tracker-tobe13155131-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mood-tracker-tobe13155131.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyClo6T9cl2VHJ_ogb04SIM0As6LZHCA3PI',
-    appId: '1:637497346681:android:6ee5ecc6036ba1d8a1e2a8',
+    appId: '1:637497346681:android:e22b146438975be7a1e2a8',
     messagingSenderId: '637497346681',
     projectId: 'mood-tracker-tobe13155131',
+    databaseURL: 'https://mood-tracker-tobe13155131-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mood-tracker-tobe13155131.appspot.com',
   );
 
@@ -62,6 +64,7 @@ class DefaultFirebaseOptions {
     appId: '1:637497346681:ios:0ca0009fca44b622a1e2a8',
     messagingSenderId: '637497346681',
     projectId: 'mood-tracker-tobe13155131',
+    databaseURL: 'https://mood-tracker-tobe13155131-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mood-tracker-tobe13155131.appspot.com',
     iosBundleId: 'com.example.moodTracker',
   );
@@ -71,6 +74,7 @@ class DefaultFirebaseOptions {
     appId: '1:637497346681:ios:0ca0009fca44b622a1e2a8',
     messagingSenderId: '637497346681',
     projectId: 'mood-tracker-tobe13155131',
+    databaseURL: 'https://mood-tracker-tobe13155131-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mood-tracker-tobe13155131.appspot.com',
     iosBundleId: 'com.example.moodTracker',
   );
@@ -81,6 +85,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '637497346681',
     projectId: 'mood-tracker-tobe13155131',
     authDomain: 'mood-tracker-tobe13155131.firebaseapp.com',
+    databaseURL: 'https://mood-tracker-tobe13155131-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mood-tracker-tobe13155131.appspot.com',
   );
+
 }

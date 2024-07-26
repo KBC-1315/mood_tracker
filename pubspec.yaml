@@ -82,6 +82,8 @@ flutter:
     - assets/annoying_mood.json
     - assets/smile_mood.json
     - assets/logout.json
+    - assets/.env
+    - .env
     - assets/signup_congratu.json
     - assets/logo.json
     - assets/login_form.json
