@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart' as firebase;
+import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mood_tracker/model/mood_model.dart';
@@ -7,7 +8,13 @@ import 'package:http/http.dart' as http;
 
 class MoodRepository {
   final firebase.FirebaseFirestore _db = firebase.FirebaseFirestore.instance;
-  final String apiKey = dotenv.env['API_KEY'] ?? '';
+  Future<String> loadApiKey() async {
+    // JSON 파일을 읽어서 파싱합니다.
+    String jsonString = await rootBundle.loadString('config.json');
+    Map<String, dynamic> config = json.decode(jsonString);
+    return config['data'] ?? '';
+  }
+
   final apiUrl = "https://api.openai.com/v1/chat/completions";
 
   Future<void> savePost(MoodModel post) async {
@@ -41,6 +48,7 @@ class MoodRepository {
   }
 
   Future<String> generateText(String prompt) async {
+    final String apiKey = await loadApiKey();
     try {
       final response = await http.post(
         Uri.parse(apiUrl),
